@@ -14,8 +14,8 @@ with open('movie_descriptions_embeddings.json', 'r') as file:
 
 #Esta función devuelve una representación numérica (embedding) de un texto, en este caso
 #la descripción de las películas
-emb = get_embedding(movies[1]['description'],engine='text-embedding-ada-002')
-print(emb)
+#emb = get_embedding(movies[1]['description'],engine='text-embedding-ada-002')
+#print(emb)
 
 #Vamos a crear una nueva llave con el embedding de la descripción de cada película en el archivo .json
 
@@ -30,7 +30,7 @@ with open('movie_descriptions_embeddings.json', 'r') as file:
     file_content = file.read()
     movies = json.loads(file_content)
 '''
-print(movies[0])
+#print(movies[0])
 
 #Para saber cuáles películas se parecen más, podemos hacer lo siguiente:
 print(movies[27]['title'])
